@@ -1,0 +1,64 @@
+body {
+    margin: auto;
+    max-width: 2200px;
+}
+
+.cell {
+    
+    width: 33.33%;
+    height: 350px;
+    
+    display: inline-block;
+    margin: 0;
+    float: left;
+    
+    overflow: hidden;
+    
+    position: relative;
+}
+
+p::selection { display: none; }
+a::selection { display: none; }
+
+
+.cell:hover {
+    cursor: crosshair;
+}
+
+
+.num {
+    font-size: 69px;
+    font-family: "Courier";
+    color:white;
+    
+    position: absolute;
+    top: 1px;
+    left: 1px;
+   
+    margin: 0;
+    
+    z-index: 3;
+}
+
+@media (min-width:1800px) {
+    
+    .cell {
+        width: 25%;
+    }
+}
+
+@media (max-width:1200px) {
+    
+    .cell {
+        width: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    
+    .cell {
+        width: 100%;
+    }
+    
+    
+}
